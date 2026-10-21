@@ -1,0 +1,12 @@
+# Optional: use docker-compose for easier multi-service or volume mounts
+version: '3.8'
+
+services:
+  lab:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python -m quantum_lab.demo
+    # For interactive or pytest:
+    # command: pytest -q

@@ -1,0 +1,6 @@
+# Normalize line endings for consistency across OSes
+* text=auto eol=lf
+
+# Keep Windows-specific scripts as CRLF if any are added later
+*.bat text eol=crlf
+*.cmd text eol=crlf
